@@ -11,6 +11,6 @@ export const fetchTracks = async () => {
      throw new Error(`Fetching tracks failed with status ${response.status}`)
    }
   const data = await response.json() as { items: unknown[] };
-
+  console.log(data.items)
   return data.items;
 };
