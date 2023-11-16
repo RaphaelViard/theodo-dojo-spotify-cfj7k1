@@ -30,11 +30,11 @@ const App = () => {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <h1 className="App-title">Bienvenue sur le blind T </h1>
-
+        <h1 className="App-title">Bienvenue sur le blind T  </h1>
+        <p>Nombre de pistes disponibles : {tracks.length}</p>
       </header>
       <div className="App-images">
-        <p>        <audio src={trackUrls[trackIndex]} autoPlay controls />
+        <p>        <audio src={tracks[trackIndex].track.preview_url} autoPlay controls />
                 <button onClick={goToNextTrack}>
                   Next track
               </button></p>
